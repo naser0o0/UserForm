@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+import Card from '../UI/Card';
+import classes from './AddUser.module.css'
 
 export default function addUser(props) {
 
@@ -7,7 +9,7 @@ export default function addUser(props) {
     }
     
   return (
-    <div>
+    <Card className={classes.input}>
         <form onSubmit={addUserHandler}>
             <label htmlFor="username">Username</label>
             <input id="username" type="text"/>
@@ -15,6 +17,6 @@ export default function addUser(props) {
             <input id="age" type="text"/>
             <button type='submit'>Add User</button>
         </form>
-    </div>
+    </Card>
   )
 }
