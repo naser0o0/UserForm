@@ -1,5 +1,5 @@
 import React from 'react';
-import addUser from './component/Users/addUser';
+import AddUser from './component/Users/AddUser';
 
 function App() {
   return (
